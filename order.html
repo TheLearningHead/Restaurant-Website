@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+</head>
+
+<body style="background:url(images/food.jpg) no-repeat center/cover;">
+
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cabin&family=Courgette&family=Dancing+Script&family=Great+Vibes&family=Kaushan+Script&family=Lobster&family=Marck+Script&family=Parisienne&display=swap" rel="stylesheet">
+    <style>
+        .bordered {
+            width: 500px;
+            height: 650px;
+            padding: 30px;
+            border: 5px solid beige;
+            margin: auto;
+            border-radius: 30px;
+        }
+        h1{
+            font-family: 'Parisienne', cursive;
+            color:bisque;
+            text-align: center;
+            font-size: 1.5cm;
+        }
+        .btn{
+            height: 40px;
+            width: 140px;
+            margin: 50px 50px;
+            font-size: 0.5cm;
+            font-weight: bold;
+            font-family: 'Permanent Marker', cursive;
+        }
+        .set{
+            font-size: x-large;
+            font-family: 'Kaushan Script', cursive;
+            color:white;
+            font-weight:bolder;
+        }
+        .set1{
+            font-size: x-large;
+            font-family: 'Kaushan Script', cursive;
+            color:black;
+            font-weight:bolder;
+        }
+    </style>
+
+    <h1>Place Your Order</h1>
+
+    <div class="bordered">
+        <form action="confirm.html">
+            <label for="name" class="set">Your Name: </label>
+            <input type="text" style="background-color:black; color: whitesmoke;" placeholder="Name" size="35px" required>
+            <br><br>
+
+            <label for="Contact No." class="set">Contact No.: </label>
+            <input type="number" style="background-color:black; color: whitesmoke;" placeholder="93******56" size="25px" required>
+            <br><br>
+
+            <label for="" class="set">Address: </label><br>
+            <textarea style="background-color:black; color: whitesmoke;" name="" id="" cols="60" rows="6" required></textarea>
+            <br><br>
+
+            <label class="set">Food Items: </label>
+            <textarea style="background-color:black; color: whitesmoke;" name="" id="" cols="60" rows="10" placeholder="Enter Item Code:
+C1
+B1" required></textarea>
+            <br><br>
+
+            <label class="set1">Mode of Payment: </label>
+            <select name="Cuisine Type" style="background-color:black; color: whitesmoke;" required>
+                <option value="">None</option>
+                <option value="">Cash</option>
+                <option value="">UPI</option>
+                <option value="">Debit Card/Credit Card</option>
+            </select>
+            <br><br>
+
+            <input style="background-color:greenyellow; color: black;" class="btn" type="submit"
+                value="ORDER NOW">
+            <a href="home.html"><input style="background-color:red; color: black;" class="btn" type="button" value="CANCEL"></a>
+        </form>
+    </div>
+
+</body>
+
+</html>
